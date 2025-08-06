@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
@@ -24,6 +25,11 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
         </ol>
+
+        <div className="bg-background text-foreground min-h-screen font-sans">
+          <ThemeToggle />
+           <h1 className="text-3xl">Dark Mode Test</h1>
+        </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
